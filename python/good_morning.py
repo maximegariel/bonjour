@@ -30,19 +30,4 @@ class ColorUpdater():
 if __name__ == "__main__":
     sched = Scheduler()
     load_tasks(sched)
-    from appJar import gui
 
-
-
-    app = gui()
-
-    ### fillings go here ###
-    app.addLabel("title", "Welcome to appJar")
-    # bottom slice - START the GUI
-    colo = ColorUpdater()
-    # call the getLocation function every second
-    app.registerEvent(colo.update_color)
-
-    app.go()
-
-    
